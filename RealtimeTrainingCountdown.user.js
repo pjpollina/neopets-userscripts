@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Realtime Training Countdown
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/pjpollina/neopets-userscripts
 // @version      0.1.0
 // @description  Actively counts down the time until training is complete.
 // @author       PJ Pollina (aeugchad)
-// @match        https://www.neopets.com/pirates/academy.phtml?type=status
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=neopets.com
+// @match        http*://www.neopets.com/pirates/academy.phtml?type=status
+// @icon         https://www.neopets.com//favicon.ico
 // @grant        none
 // ==/UserScript==
 
