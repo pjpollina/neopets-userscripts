@@ -5,6 +5,7 @@
 // @description  Actively counts down the time until training is complete.
 // @author       PJ Pollina (aeugchad)
 // @match        http*://www.neopets.com/pirates/academy.phtml?type=status
+// @match        http*://www.neopets.com/island/training.phtml?type=status
 // @icon         https://www.neopets.com//favicon.ico
 // @grant        none
 // ==/UserScript==
