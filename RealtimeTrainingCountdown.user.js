@@ -14,17 +14,14 @@
 let timer = document.querySelector(".content").getElementsByTagName("tbody")[0].getElementsByTagName("td")[2].getElementsByTagName("b")[0];
 timer.id = "timer";
 
+// Exit if there's no timer
+if(!timer.textContent.includes("hrs")) {
+  return;
+}
+
 // Sets the finish time
 let finishTime;
 {
-  let text = timer.textContent;
-
-  if(!text.includes("minutes")) {
-    text = "0 minutes, " + text;
-  }
-  if(!text.includes("hrs")) {
-    text = "0 hrs, " + text;
-  }
   let timecode = timer.textContent.replace(/\b(\d)\b/g, "0$1").replace(/ (hrs|minutes), /gi, ":").replace(" seconds", "");
   finishTime = new Date(Date.now() + Date.parse("01 January 1970 " + timecode + " GMT"));
 }
